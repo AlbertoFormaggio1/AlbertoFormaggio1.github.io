@@ -1,0 +1,122 @@
+.banner {
+    padding: 1rem 1rem;
+    background-color: rgba(var(--backgroundOp), 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 990;
+}
+
+.container-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contenitore-menu {
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    z-index: 30;
+}
+
+.menu-mio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.menu {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 72px;
+}
+
+.menu li {
+    height: 100%;
+    -webkit-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.menu-link {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--primaryc);
+    text-align: center;
+    display: block;
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.menu-link:hover {
+    color: var(--secondaryc);
+}
+
+.social-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    body, html {
+        min-height: 100% !important;
+        height: 100%;
+    }
+
+    #app {
+        height: 100%;
+        position: relative;
+    }
+}
+.img-parentsize {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menuitem-social-footer {
+    height: inherit;
+}
+
+* {
+    font-family: "Zilla Slab", monospace !important;
+}
+
+body {
+    font-weight: 500;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
