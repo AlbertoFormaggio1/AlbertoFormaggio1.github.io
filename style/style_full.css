@@ -15033,7 +15033,7 @@ textarea {
 
 .social-sidebar {
     width: 30px;
-    height: 200px;
+    height: 100px;
 }
 
 .left-sidebar .vertical-line {
@@ -15044,7 +15044,7 @@ textarea {
     background-size: 2px 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 50px;
+    height: 100px;
 }
 
 .scroll-msg {
