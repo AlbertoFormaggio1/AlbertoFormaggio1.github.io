@@ -14801,13 +14801,13 @@ textarea {
 
 .bar {
     display: block;
-    width: 40px;
-    margin: 5px 0;
+    width: 90px;
+    margin: 10px 0;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: white;
-    height: 3px;
+    height: 5px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -15105,7 +15105,7 @@ textarea {
 }
 @media (max-width: 1000px) {
     .logo {
-        height: 5.625rem;
+        height: 12rem;
     }
 }
 
