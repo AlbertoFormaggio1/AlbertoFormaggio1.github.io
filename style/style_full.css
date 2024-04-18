@@ -14685,11 +14685,13 @@ label {
 }
 
 /* ############################° HOMEPAGE ############################### */
-@media (min-width: 800px) {
+@media (max-width: 1000px) {
     .home-wrapper {
         margin-top: 10%;
     }
+}
 
+@media (min-width: 1000px) {
     section {
         position: relative;
     }
