@@ -14841,7 +14841,7 @@ textarea {
     transform: translateY(300%);
 }
 
-.loaded .home-wrapper * {
+.documento .home-wrapper * {
     -webkit-animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 1s forwards;
     -o-animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 1s forwards;
     animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 1s forwards;
