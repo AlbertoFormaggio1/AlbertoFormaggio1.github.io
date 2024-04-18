@@ -48,33 +48,44 @@
             $(document).ready(function(){
                 $("#header").load("header.html");
                 $("#footer").load("footer.html");
+
+                $(window).load(function () {
+                    $('body').addClass('loaded');
+                });
             });
         </script>
 
+        <script src="scripts/animate_boxes.js" type="text/javascript"></script>
+
         <script>
             $(document).ready(function(){
-            $('.box').each(function(){
-                animateBoxes($(this));
+            var words = ['WEB DEVELOPER','AI ADDICTED' , 'DREAMER', 'TRAVELER', 'COMPUTER ENGINEER', 'PROBLEM SOLVER'];
+            new AnimatedText(document.getElementById('textCarousel'),words,4000,20);
             });
-            });
-        
-            function animateBoxes(box){
-            var h = $(window).height() - box.height();
-            var w = $(window).width() - box.width();
-        
-            var nh = Math.floor(Math.random() * h);
-            var nw = Math.floor(Math.random() * w);
-        
-            var position = box.offset();
-            var oh = position.top;
-            var ow = position.left;
-            var distance = Math.sqrt(Math.pow(oh - nh,2) + Math.pow(ow - nw,2));
-            var time = distance/0.1;
-        
-            box.animate({top:nh, left: nw}, time, 'swing', function(){
-                animateBoxes(box);
-            });
+
+
+            function AnimatedText(target,texts,changeInterval,updateInterval,onTextChanged){
+            var currentText=0;
+            var areaText=texts[0];
+            this.t1=setInterval(function(){
+                var c=parseInt(Math.random()*Math.max(texts[currentText].length,areaText.length));
+                var s=texts[currentText][c];
+                if(typeof s == 'undefined') s=" ";
+                while(areaText.length<c) areaText+=" ";
+                var newText=(areaText.slice(0,c)+s+areaText.slice(c+1)).trim();
+                var diff=!(newText==areaText);
+                areaText=newText;
+                if(onTextChanged&&diff) onTextChanged();
+                target.innerHTML=areaText.length==0?"&nbsp;":areaText;
+            }.bind(this),updateInterval?updateInterval:50);
+            this.t2=setInterval(function(){
+                currentText=parseInt(Math.random()*texts.length);
+            }.bind(this),changeInterval?changeInterval:4000);
             }
+            AnimatedText.prototype={
+            constructor:AnimatedText,
+            stop:function(){clearInterval(this.t1);clearInterval(this.t2);}
+            };
         </script>
     </body>
 </html>
