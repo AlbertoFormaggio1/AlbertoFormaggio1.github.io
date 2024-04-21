@@ -15125,6 +15125,14 @@ textarea {
 
 .first-section{padding-top:10rem}
 
-@media (max-width:1000px){.first-section{padding-top:7rem}
+@media (max-width:1000px){.first-section{padding-top:7rem}}
 
 /*# sourceMappingURL=main.css.map*/
+
+.projects-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
