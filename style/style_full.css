@@ -15096,11 +15096,10 @@ textarea {
     position: relative;
 }
 
-@media (max-width: 1000px) {
-    .scroll-section {
-        padding-bottom: 100px;
-    }
+.scroll-section{
+    margin-bottom: 100px;
 }
+
 @media (min-width: 1000px) {
     .logo {
         height: 8.125rem;
