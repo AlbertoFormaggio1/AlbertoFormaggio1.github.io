@@ -14779,13 +14779,13 @@ textarea {
     left: -102%;
     z-index: 3;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .top-menu {
     color: white;
     background-color: var(--primaryc);
-    height: 400px;
+    height: 250px;
 }
 
 .hamburger-menu.active {
@@ -14805,13 +14805,13 @@ textarea {
 
 .bar {
     display: block;
-    width: 90px;
-    margin: 10px 0;
+    width: 60px;
+    margin: 7px 0;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: white;
-    height: 5px;
+    height: 3px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -14819,15 +14819,15 @@ textarea {
 }
 
 .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(25px) rotate(45deg);
-    -o-transform: translateY(25px) rotate(45deg);
-    transform: translateY(25px) rotate(45deg);
+    -webkit-transform: translateY(15px) rotate(45deg);
+    -o-transform: translateY(15px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-25px) rotate(-45deg);
-    -o-transform: translateY(-25px) rotate(-45deg);
-    transform: translateY(-25px) rotate(-45deg);
+    -webkit-transform: translateY(-19px) rotate(-45deg);
+    -o-transform: translateY(-19px) rotate(-45deg);
+    transform: translateY(-19.px) rotate(-45deg);
 }
 
 .home-wrapper h1 {
@@ -15116,11 +15116,6 @@ textarea {
 @media (min-width: 1000px) {
     .logo {
         height: 8.125rem;
-    }
-}
-@media (max-width: 1000px) {
-    .logo {
-        height: 12rem;
     }
 }
 
