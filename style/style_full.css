@@ -15097,7 +15097,19 @@ textarea {
 }
 
 .scroll-section{
-    margin-bottom: 100px;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+    .scroll-section{
+        margin-bottom: 6rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .scroll-section{
+        margin-bottom: 9rem;
+    }
 }
 
 @media (min-width: 1000px) {
