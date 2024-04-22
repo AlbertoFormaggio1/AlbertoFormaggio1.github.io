@@ -14426,7 +14426,7 @@ body {
 /*  ###############################   CONTACT ME   ################################*/
 @media (min-width: 1000px) {
     .main-margin {
-        margin-top: 12rem;
+        margin-top: 10rem;
     }
 }
 @media (max-width: 1000px) {
@@ -15167,4 +15167,8 @@ a.nostyle:visited {
     text-decoration: inherit;
     color: inherit;
     cursor: pointer;
+}
+
+.color-white{
+    color: var(--white);
 }

@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Alberto Formaggio</title>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="import" href="imports/bootstrap_style.html">
+            <link ref="import" href="imports/bootstrap_js.html">
+            <link rel="stylesheet" href="style/style_full.css">
+        </head>
     </head>
     <body>
+        <div id="header"></div>
+        <main class="main main-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"><h2 class="txt-primary mb-5">All Projects</h2></div>
+                    <div class="col-12">
+                        <table class="mx-auto">
+                            <thead>
+                                <tr>
+                                    <th class="py-3 pr-5 font-weight-bold color-white">Year</th>
+                                    <th class="py-3 pr-5 font-weight-bold color-white">Project</th>
+                                    <th class="py-3 pr-5 font-weight-bold color-white">Made At</th>
+                                    <th class="py-3 pr-5 font-weight-bold color-white">Built with</th>
+                                    <th class="py-3 pr-5 font-weight-bold color-white">Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-4 pr-4 align-top">2023</td>
+                                    <td class="py-4 pr-4 align-top color-white font-weight-bold">Progetto 1 con titolo lungo</td>
+                                    <td class="py-4 pr-4 align-top">Universita' di Padova</td>
+                                    <td class="py-4 pr-4 align-top"><ul class="mt-2 d-flex flex-wrap no-style-list">
+                                        <li class="mt-2 mr-2">
+                                            <div class="txt-primary d-flex align-items-center skill-object px-3 py-1">Deep Learning</div>
+                                        </li>
+                                        <li class="mt-2 mr-2">
+                                            <div class="txt-primary d-flex align-items-center skill-object px-3 py-1">Semantic Segmentation</div>
+                                        </li>
+                                        <li class="mt-2 mr-2">
+                                            <div class="txt-primary d-flex align-items-center skill-object px-3 py-1">MATLAB</div>
+                                        </li>
+                                    </ul></td>
+                                    <td class="py-4 pr-4 align-top">Link</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
 
+        <div id="footer"></div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="scripts/animate_boxes.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
     </body>
 </html>
