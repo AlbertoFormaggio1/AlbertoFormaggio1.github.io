@@ -14087,9 +14087,9 @@ body {
 }
 
 .timeline li:nth-child(odd) .liste-active .mycard::before {
-    -webkit-animation: fadeInBorderColorOdd 2s;
-    -o-animation: fadeInBorderColorOdd 2s;
-    animation: fadeInBorderColorOdd 2s;
+    -webkit-animation: fadeInBorderColorOdd 1s;
+    -o-animation: fadeInBorderColorOdd 1s;
+    animation: fadeInBorderColorOdd 1s;
     border-color: transparent var(--secondaryc) transparent transparent;
 }
 
@@ -14130,9 +14130,9 @@ body {
 }
 
 .timeline li:nth-child(even) .liste-active .mycard::before {
-    -webkit-animation: fadeInBorderColorEven 2s;
-    -o-animation: fadeInBorderColorEven 2s;
-    animation: fadeInBorderColorEven 2s;
+    -webkit-animation: fadeInBorderColorEven 1s;
+    -o-animation: fadeInBorderColorEven 1s;
+    animation: fadeInBorderColorEven 1s;
     border-color: transparent transparent transparent var(--secondaryc);
 }
 
@@ -14192,9 +14192,9 @@ body {
 }
 
 .liste-active .bg_primary {
-    -webkit-animation: fadeInTitlePrimary 2s;
-    -o-animation: fadeInTitlePrimary 2s;
-    animation: fadeInTitlePrimary 2s;
+    -webkit-animation: fadeInTitlePrimary 1s;
+    -o-animation: fadeInTitlePrimary 1s;
+    animation: fadeInTitlePrimary 1s;
 }
 
 @-webkit-keyframes fadeInTitlePrimary {
@@ -14224,9 +14224,9 @@ body {
     }
 }
 .liste-active .bg_purple {
-    -webkit-animation: fadeInTitlePurple 2s;
-    -o-animation: fadeInTitlePurple 2s;
-    animation: fadeInTitlePurple 2s;
+    -webkit-animation: fadeInTitlePurple 1s;
+    -o-animation: fadeInTitlePurple 1s;
+    animation: fadeInTitlePurple 1s;
 }
 
 @-webkit-keyframes fadeInTitlePurple {
@@ -14256,9 +14256,9 @@ body {
     }
 }
 .liste-active .bg_orange {
-    -webkit-animation: fadeInTitleOrange 2s;
-    -o-animation: fadeInTitleOrange 2s;
-    animation: fadeInTitleOrange 2s;
+    -webkit-animation: fadeInTitleOrange 1s;
+    -o-animation: fadeInTitleOrange 1s;
+    animation: fadeInTitleOrange 1s;
 }
 
 @-webkit-keyframes fadeInTitleOrange {
@@ -14289,9 +14289,9 @@ body {
 }
 
 .liste-active .bg_red {
-    -webkit-animation: fadeInTitleRed 2s;
-    -o-animation: fadeInTitleRed 2s;
-    animation: fadeInTitleRed 2s;
+    -webkit-animation: fadeInTitleRed 1s;
+    -o-animation: fadeInTitleRed 1s;
+    animation: fadeInTitleRed 1s;
 }
 
 @-webkit-keyframes fadeInTitleRed {
@@ -14322,9 +14322,9 @@ body {
 }
 
 .liste-active .bg_green {
-    -webkit-animation: fadeInTitleGreen 2s;
-    -o-animation: fadeInTitleGreen 2s;
-    animation: fadeInTitleGreen 2s;
+    -webkit-animation: fadeInTitleGreen 1s;
+    -o-animation: fadeInTitleGreen 1s;
+    animation: fadeInTitleGreen 1s;
 }
 
 @-webkit-keyframes fadeInTitleGreen {
