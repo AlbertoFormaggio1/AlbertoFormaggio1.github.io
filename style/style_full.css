@@ -15222,3 +15222,15 @@ a.nostyle:visited {
 .hide-nav{
     transform: translateY(-100%);
 }
+
+.logo-contact{
+    max-width: 5rem;
+}
+
+.link {
+    color: var(--primaryc);
+}
+
+.link:hover{
+    color: var(--secondaryc);
+}
