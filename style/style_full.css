@@ -13855,6 +13855,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 990;
+    transition: transform 0.3s;
 }
 
 .container-logo {
@@ -14286,6 +14287,40 @@ body {
         background-color: #e38c34;
     }
 }
+
+.liste-active .bg_red {
+    -webkit-animation: fadeInTitleRed 2s;
+    -o-animation: fadeInTitleRed 2s;
+    animation: fadeInTitleRed 2s;
+}
+
+@-webkit-keyframes fadeInTitleRed {
+    0% {
+        background-color: var(--background);
+    }
+    100% {
+        background-color: #f24741;
+    }
+}
+
+@-o-keyframes fadeInTitleRed {
+    0% {
+        background-color: var(--background);
+    }
+    100% {
+        background-color: #f24741;
+    }
+}
+
+@keyframes fadeInTitleRed {
+    0% {
+        background-color: var(--background);
+    }
+    100% {
+        background-color: #f24741;
+    }
+}
+
 .liste-active .bg_green {
     -webkit-animation: fadeInTitleGreen 2s;
     -o-animation: fadeInTitleGreen 2s;
@@ -14431,7 +14466,7 @@ body {
 }
 @media (max-width: 1000px) {
     .main-margin {
-        margin-top: 5rem;
+        margin-top: 9rem;
     }
 }
 /* line 7, node_modules/bootstrap/scss/_buttons.scss */
@@ -14461,6 +14496,10 @@ body {
 .form-btn:hover {
     color: #212529 !important;
     text-decoration: none !important;
+}
+
+.txt-primary-hover{
+    color: var(--primarychover);
 }
 
 /* line 60, node_modules/bootstrap/scss/_buttons.scss */
@@ -14904,6 +14943,9 @@ textarea {
     z-index: 100;
 }
 
+@media (max-width:1000px){.box{display:none}}
+
+
 #yellowBox {
     background-color: rgba(223, 223, 102, 0.5);
 }
@@ -15037,7 +15079,7 @@ textarea {
 
 .social-sidebar {
     width: 30px;
-    height: 100px;
+    height: 140px;
 }
 
 .left-sidebar .vertical-line {
@@ -15171,4 +15213,12 @@ a.nostyle:visited {
 
 .color-white{
     color: var(--white);
+}
+
+.job-description-list li{
+    list-style-type: circle;
+}
+
+.hide-nav{
+    transform: translateY(-100%);
 }

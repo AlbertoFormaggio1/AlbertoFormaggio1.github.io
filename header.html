@@ -51,6 +51,12 @@
                             <div class="top-menu d-flex flex-column justify-content-between py-3">
                                 <div class="row">
                                     <div class="col-12 d-flex justify-content-center">
+                                        <a href="index.html" class="menu-link-hamburger" aria-haspopup="true">
+                                            HOME</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
                                         <a href="about.html" class="menu-link-hamburger" aria-haspopup="true">
                                             ABOUT</a>
                                     </div>
@@ -60,13 +66,6 @@
                                         <a href="projects.html"
                                            class="menu-link-hamburger" aria-haspopup="true">
                                             PROJECTS</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-center">
-                                        <a href="projects.html" class="menu-link-hamburger"
-                                           aria-haspopup="true">
-                                            CONTACT ME</a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -87,4 +86,32 @@
     <link ref="import" href="imports/bootstrap_js.html">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="scripts/hamburger_animation.js"></script>
+    <script>
+        const nav = document.querySelector(".banner")
+        let lastScrollY = window.scrollY;
+        let timer = null;
+
+        window.addEventListener("scroll", () => {
+
+            if(lastScrollY < window.scrollY){
+                if (timer !== null) {
+                    clearTimeout(timer);
+                    nav.classList.add('hide-nav');
+                }
+                timer = setTimeout(function() {
+                    nav.classList.remove('hide-nav');
+                }, 500);
+            }
+            else{
+                // Scrolling up
+                nav.classList.remove("hide-nav")
+            }
+
+            lastScrollY = window.scrollY
+        })
+
+        window.addEventListener('scroll', function() {
+
+        }, false);
+    </script>
 </body>
