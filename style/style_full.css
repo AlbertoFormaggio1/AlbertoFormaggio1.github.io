@@ -13990,8 +13990,9 @@ body {
 
 .list-item {
     position: relative;
-    width: 8px;
-    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    margin: 0 0;
     padding-top: 50px;
     background: var(--background);
 }
@@ -14008,6 +14009,7 @@ body {
 
 .liste-not-active .mycard {
     background-color: var(--background);
+    visibility: hidden;
 }
 
 .liste-active .mycard {
@@ -14045,7 +14047,7 @@ body {
 }
 .time {
     position: absolute;
-    left: 50%;
+    left: 2.5rem;
     bottom: 0;
     -webkit-transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -14062,7 +14064,8 @@ body {
 .timeline li .mycard {
     position: relative;
     bottom: 15px;
-    width: 500px;
+    max-width: 100%;
+    width: 100%;
     color: var(--background) !important;
     border-radius: 10px;
 }
@@ -14077,7 +14080,7 @@ body {
 }
 
 .timeline li:nth-child(odd) .mycard {
-    left: 70px;
+    left: 7rem;
 }
 
 .timeline li:nth-child(odd) .mycard::before {
@@ -14119,56 +14122,14 @@ body {
         border-color: transparent var(--secondaryc) transparent transparent;
     }
 }
-.timeline li:nth-child(even) .mycard {
-    left: -560px;
-}
 
-.timeline li:nth-child(even) .mycard::before {
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent inherit;
-}
-
-.timeline li:nth-child(even) .liste-active .mycard::before {
-    -webkit-animation: fadeInBorderColorEven 1s;
-    -o-animation: fadeInBorderColorEven 1s;
-    animation: fadeInBorderColorEven 1s;
-    border-color: transparent transparent transparent var(--secondaryc);
-}
-
-@-webkit-keyframes fadeInBorderColorEven {
-    0% {
-        border-color: transparent transparent transparent inherit;
-    }
-    100% {
-        border-color: transparent transparent transparent var(--secondaryc);
-    }
-}
-
-@-o-keyframes fadeInBorderColorEven {
-    0% {
-        border-color: transparent transparent transparent inherit;
-    }
-    100% {
-        border-color: transparent transparent transparent var(--secondaryc);
-    }
-}
-
-@keyframes fadeInBorderColorEven {
-    0% {
-        border-color: transparent transparent transparent inherit;
-    }
-    100% {
-        border-color: transparent transparent transparent var(--secondaryc);
-    }
-}
 .progress-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
     height: 100%;
-    left: calc(50% - 4px);
+    left: 3.25rem;
     z-index: 3;
 }
 
@@ -14186,6 +14147,7 @@ body {
     height: 0%;
     background-color: var(--primaryc);
 }
+
 
 .title {
     border-radius: inherit;
@@ -14438,6 +14400,24 @@ body {
     color: var(--background) !important;
     border-radius: 10px;
     background-color: var(--secondaryc);
+}
+
+.img-timeline{
+    max-width: 100%;
+    height: auto;
+    display: inherit;
+}
+
+.company{
+    color: var(--background); /* Dark teal */
+}
+
+.jobname{
+    color: #b3251b; /* Slightly lighter teal */
+}
+
+.duration{
+    color: #696665; /* Slightly lighter teal */
 }
 
 /* ########################### SKILL BLOCK ###############################à */
@@ -15233,4 +15213,37 @@ a.nostyle:visited {
 
 .link:hover{
     color: var(--secondaryc);
+}
+
+.skill-category {
+    background-color: #1e293b;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+}
+
+.skill-category:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #475569;
+}
+
+.mycard a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.mycard a:hover{
+    color:inherit;
+    text-decoration: none;
+}
+
+.mycard:hover{
+    transform: translateY(-5px);
+}
+
+.mycard{
+    transition: transform 0.3s ease;
+}
+
+.description li{
+    list-style-type: circle !important;
 }
